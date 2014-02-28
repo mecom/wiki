@@ -1,1 +1,1 @@
-//mecom's Program knowledge wiki
+//mecom's computer knowledge wiki
