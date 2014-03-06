@@ -1,0 +1,19 @@
+/**
+ * 
+ * 购物车飞入效果
+ */
+
+
+function animationCart() {
+	
+	var cartButtonTop = $("#addcartbutton").offset().top; //加入购物车button位置
+	var cartButtonLeft = $("#addcartbutton").offset().left; //加入购物车button位置
+
+	var CopyDiv = '<div id="box" style="top:' + cartButtonTop + 'px;left:' + cartButtonLeft + 'px; background: #6699FF;height: 100px; width: 100px; position: absolute;"></div>';
+	var topLength =  $(".cart").offset().top; //购物车位置
+	 var leftLength = $(".cart").offset().left;//购物车位置
+	$("body").append(CopyDiv);
+	 $("body").children("#box").animate({width: "30px",height: "30px", "top": topLength, "left": leftLength, "opacity": .1  }, 900, 
+	function()
+	{$(this).remove()});
+}
